@@ -1,2 +1,2 @@
-# Brainnest_Week_3
+# Brainnest Week 3
  Brainnest Training Program - Week 3 - JavaScript
