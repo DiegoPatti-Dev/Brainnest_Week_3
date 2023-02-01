@@ -10,7 +10,7 @@ function computerPlay(){
 
 function check(playerSelection, computerSelection){
   if(playerSelection == computerSelection){
-    return `Tie`
+    return `Tie`;
   }else if(
     (playerSelection == `rock` && computerSelection == `scissors`) ||
     (playerSelection == `paper` && computerSelection == `rock`) ||
