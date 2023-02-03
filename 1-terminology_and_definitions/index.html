@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript - Terminology & Definitions</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>JavaScript - Terminology & Definitions</h1>
+  </header>
+
+  <main>
+    <ol>
+      <li class="question">
+        Name the three ways to declare a variable?
+        <ul>
+          <li class="answer">
+          Const, let and var.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        Which of the three variable declarations should you avoid and why?
+        <ul>
+          <li class="answer">
+            Var, because variables using var can be either globally or functionally scoped according to the usage.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What rules should you follow when naming variables?
+        <ul>
+          <li class="answer">
+            Human-readable names, stay away from abbreviations or short names, make names maximally descriptive and concise and use camel case.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What should you look out for when using the + operator with numbers and strings?
+        <ul>
+          <li class="answer">
+            When you have strings and numbers, the + operator performs concatenation.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        How does the % operator work?
+        <ul>
+          <li class="answer">
+            This operator returns remainder of two operands.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        Explain the difference between == and ===.
+        <ul>
+          <li class="answer">
+            == compares the equality of two operands without considering type and === compares equality of two operands with type.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        When would you receive a NaN result?
+        <ul>
+          <li class="answer">
+            NaN represents a computational error. It is a result of an incorrect or an undefined mathematical operation.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        How do you increment and decrement a number?
+        <ul>
+          <li class="answer">
+            Using ++ or --.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        Explain the difference between prefixing and post-fixing increment/decrement
+operators.
+        <ul>
+          <li class="answer">
+            If you use the ++ operator as a prefix like: ++var, the value of var is incremented by 1. <br>
+            If you use the ++ operator as a postfix like: var++, the original value of var is returned first, then var is incremented by 1.
+        </ul>
+      </li>
+      <li class="question">
+        What is operator precedence and how is it handled in JS?
+        <ul>
+          <li class="answer">
+            Operator procedence describes the order in which operations are performed in an arithmetic expression. Multiplication (*) and division (/) have higher precedence than addition (+) and subtration (-).
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        How do you log information to the console?
+        <ul>
+          <li class="answer"> 
+            Using the command console.log().
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What does unary plus operator do to string representations of integers?
+        <ul>
+          <li class="answer">
+            The unary can convert string representations of integers and floats, as well as the non-strings values true, false and null.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What are the eight data types in JavaScript?
+        <ul>
+          <li class="answer">
+            Undefined, null, boolean, number, bigint, string, symbol and object.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        Which data type is NOT primitive?
+        <ul>
+          <li class="answer">
+            Object.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What is the relationship between null and undefined?
+        <ul>
+          <li class="answer">
+            Undefined is a variable that refers to something that doesn't exist, and the variable isn't defined to be anything. 
+            <br>
+            Null is a variable that is defined but is missing a value.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What is the difference between single, double, and backtick quotes for strings?
+        <ul>
+          <li class="answer">
+            Double and single quotes are simple quotes. There's pratically no difference between them. 
+            <br>
+            Backticks are "extended functionality" quotes. They allow us to embed variables and expressions into a string by wrapping the in ${...}.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What is the term for embedding variables/expressions in a string?
+        <ul>
+          <li class="answer">
+            String interpolation.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        Which type of quote lets you embed variables/expressions in a string?
+        <ul class="answer">
+          Backticks.
+        </ul>
+      </li>
+      <li class="question">
+        How do you embed variables/expressions in a string?
+        <ul>
+          <li class="answer">
+            You can include expressions/variables inside a string by placing then inside curly braces.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        How do you escape characters in a string?
+        <ul>
+          <li class="answer">
+            Using backslash character.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What is the difference between the slice/substring/substr string methods?
+        <ul>
+          <li class="answer">
+            slice() extracts parts of a string and returns the extracted parts in a new string. substr() extracts parts of a string, beginning at the character at the specified position, and returns the specified number of characters. substring() extracts parts of a string and returns the extracted parts in a new string.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What are the three logical operators and what do they stand for?
+        <ul>
+          <li class="answer">
+            The three logical operators are: "&&" (AND), "||"(OR) and "!"(NOT).
+            <br>
+            The "&&" operator returns "true" if both operands are "true", and "false" otherwise.
+            <br>
+            The "||" operator returns "true" if either operand is "true", and "false" if both are "false".
+            <br>
+            The "!" operator negates a boolean value, so "!" returns "false" if the operand is "true", and "true" if its operand is "false".
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What are the comparison operators?
+        <ul>
+          <li class="answer">
+            "==" (equal to); <br>
+            "===" (strict equal to); <br>
+            "!=" (not equal to); <br>
+            "!==" (strict not equal to); <br>
+            ">" (greater than); <br>
+            ">=" (greater than or equal to); <br>
+            "<" (less than); <br>
+            "<=" (less than or equal to);
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What are truthy and falsy values?
+        <ul>
+          <li class="answer">
+            A truthy value is a value that is considered to be true when evaluated in a Boolean context, while a falsy value is a value that is considered to be false.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What are the falsy values in JavaScript?
+        <ul>
+          <li class="answer">
+            "false", "0" (zero), -0, NaN, ""(empty string), null and undefined.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What are conditionals?
+        <ul>
+          <li class="answer">
+            Conditionals are statements that allow you to make decisions based on the evaluation of an expression. They allow you to execute different code blocks depending on whether a specified condition is true or false.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What is the syntax for an if/else conditional?
+        <ul>
+          <li class="answer">
+            if (expression) { <br>
+              // code to be executed if expression is true <br>
+            } else { <br>
+              // code to be executed if expression is false <br>
+            }
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What is the syntax for a switch statement?
+        <ul>
+          <li class="answer">
+            switch (expression) { <br>
+              case value1: <br>
+                // code to be executed if expression === value1 <br>
+                break; <br>
+              case value2: <br>
+                // code to be executed if expression === value2 <br>
+                break; <br>
+              ... <br>
+              default: <br>
+                // code to be executed if expression is different from any of the values <br>
+            }
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What is the syntax for a ternary operator?
+        <ul>
+          <li class="answer">
+            expression ? truePart : falsePart <br>
+            Example: <br>
+            let isTrue = true; <br>
+            let result = isTrue ? "Yes, it's true!" : "No, it's false."; <br>
+            console.log(result); // Output: "Yes, it's true!"
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What is nesting?
+        <ul>
+          <li class="answer">
+
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What are functions useful for?
+        <ul>
+          <li class="answer">
+            Nesting refers to the practice of placing one control flow statement inside another. This allows you to create complex control structures that can evaluate multiple conditions and execute different code blocks based on the results.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        How do you invoke a function?
+        <ul>
+          <li class="answer">
+            you can invoke (or call) a function by using its name followed by a set of parentheses (). You can also pass arguments inside the parentheses to pass values to the function.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What are anonymous functions?
+        <ul>
+          <li class="answer">
+            Anonymous functions are functions that are not given a named identifier. Instead, they are assigned to a variable or passed as an argument to another function.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What is function scope?
+        <ul>
+          <li class="answer">
+            Function scope refers to the visibility and accessibility of variables within a function. Variables declared within a function are only accessible within that function, and they are said to be in the scope of that function.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What are return values?
+        <ul>
+          <li class="answer">
+            A return value is the value that a function returns to the caller when it has completed its execution. The return value can be any valid JavaScript data type, such as a string, number, boolean, object, or even another function.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What are arrow functions?
+        <ul>
+          <li class="answer">
+            Arrow functions (also known as "fat arrow functions") are a shorthand syntax for defining anonymous functions. They are similar to traditional anonymous functions, but they have a more concise syntax and a different behavior when it comes to the value of the this keyword.
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </main>
+
+  <footer>
+    <button class="button">
+      <a class="button-text" href="../index.html">Back</a>
+    </button>
+  </footer>
+</body>
+</html>

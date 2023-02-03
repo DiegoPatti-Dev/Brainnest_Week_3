@@ -1,13 +1,14 @@
 // Assignment 4 - Rock, Paper or Scissors Game
 
+// Possible choices
 const choices = [`rock`, `paper`, `scissors`];
 
+// Function to select a choice for the computer
 function computerPlay(){
-  const compChoice = choices[
-    Math.floor(Math.random() * choices.length)];
-  return compChoice;
+  return choices[Math.floor(Math.random() * choices.length)];
 }
 
+// Function to check the winner
 function check(playerSelection, computerSelection){
   if(playerSelection == computerSelection){
     return `Tie`;
@@ -22,6 +23,7 @@ function check(playerSelection, computerSelection){
   }
 }
 
+// Function to play a single round
 function playRound(playerSelection, computerSelection){
   const result = check(playerSelection, computerSelection)
   if(result == `Tie`){
@@ -33,6 +35,7 @@ function playRound(playerSelection, computerSelection){
   }
 }
 
+// Function to input the players choice
 function playerChoice(){
   let validChoice = false;
   while(validChoice == false){
@@ -48,6 +51,7 @@ function playerChoice(){
   }
 }
 
+// Function to play the full game
 function game(){
   let playerScore = 0;
   let computerScore = 0;
@@ -70,3 +74,5 @@ function game(){
     console.log(`Nobody won. The game was a tie.`);
   }
 }
+
+// The call of function game() is in the button in html file
