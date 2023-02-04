@@ -75,4 +75,4 @@ function game(){
   }
 }
 
-// The call of function game() is in the button in html file
+// The function game() is called in the button in html file
